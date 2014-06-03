@@ -5,7 +5,7 @@
 Widget name:
   NumberRate
 Description:
-  Display pitch rate.
+  Display pitch (speed) rate.
 Tags:
   ObjectName:
     Optional. Allows setting of widget object name, useful for styling the widget explicitly using CSS.

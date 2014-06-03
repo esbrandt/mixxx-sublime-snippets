@@ -5,7 +5,7 @@
 Widget name:
   NumberBpm
 Description:
-  Display BPM number.
+  Display current BPM number after speed change.
 Tags:
   ObjectName:
     Optional. Allows setting of widget object name, useful for styling the widget explicitly using CSS.
@@ -47,7 +47,7 @@ Tags:
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>numberbpm</tabTrigger>
-  <description>Mixxx -> NumberBpm: Display BPM number</description>
+  <description>Mixxx -> NumberBpm: Display current BPM number after speed change</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>text.xml</scope>
 </snippet>
