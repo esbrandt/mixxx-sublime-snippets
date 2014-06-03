@@ -66,15 +66,15 @@ Contents - What's included
 
 | Widget name | Description | Tab trigger|
 | --- | --- | --- |
-| *Buttons* |
-|   |
-| *Knobs* |
-|   |
-| *Slider* |
+| **Buttons** |
+||
+| **Knobs** |
+||
+| **Slider** |
 | SliderComposed | Display Crossfader  | crossfader |
 | SliderComposed | Display Pitch (Speed) fader  | rate |
 | SliderComposed | Display channel volume fader  | volume |
-| *Text* |
+| **Text** |
 | TextProperty | Display track informations loaded from ID3 the tracks tags | trackproperty |
 | NumberBpm | Display current BPM number after speed change | numberbpm |
 | NumberBpm | Display numeric volume and gain | numberdb |
@@ -83,6 +83,6 @@ Contents - What's included
 | Key | Display effective musical key | key |
 | Label | Display a text label | label |
 | Time | Display the current time | time |
-| *Layout* |
+| **Layout** |
 | Splitter | Control the size of child widgets by dragging the boundary between them | splitter |
 | Schemes | Create colored versions of a skin | schemes |
