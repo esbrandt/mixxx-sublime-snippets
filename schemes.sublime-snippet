@@ -1,0 +1,92 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+
+<!--
+Name:
+    Skin Color Scheme
+Description:
+    Create different colored version of a skin by making use of the color filtering architecture in Mixxx.
+Variables:
+    Name: Becomes selectable in Mixxx Preferences->Interface->Color Scheme
+    Filters: Various filters for image manipulation, see
+    http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture
+    http://mixxx.org/wiki/doku.php/skin_color_schemes_tips_and_tool
+-->
+<Schemes>
+  <Scheme>
+    <Name>${10:Default}</Name>
+    <Filters/>
+  </Scheme>
+  <Scheme>
+    <Name>${20:Foo}</Name>
+    <Filters>
+      <Invert/>
+      <HueInv/>
+      <Add>
+        <Amount>${30:50}</Amount>
+      </Add>
+      <ScaleWhite>
+        <Amount>${40:1.5}</Amount>
+      </ScaleWhite>
+      <Add>
+        <Amount>${50:-50}</Amount>
+      </Add>
+    </Filters>
+  </Scheme>
+  <Scheme>
+    <Name>${60:Foo2}</Name>
+    <Filters>
+    <Invert/>
+      <HSVTweak>
+        <HMin>${70:30}</HMin>
+        <HMax>${80:30}</HMax>
+        <HConst>${90:-27}</HConst>
+        <SConst>${100:-59}</SConst>
+        <VConst>${110:-21}</VConst>
+      </HSVTweak>
+      <HSVTweak>
+        <HConst>${120:-170}</HConst>
+      </HSVTweak>
+    </Filters>
+  </Scheme>
+  <Scheme>
+    <Name>${130:Foo3}</Name>
+    <Filters>
+      <Invert/>
+      <Add>
+        <Amount>${140:50}</Amount>
+      </Add>
+      <ScaleWhite>
+        <Amount>${150:1.5}</Amount>
+      </ScaleWhite>
+      <Add>
+        <Amount>${160:-50}</Amount>
+      </Add>
+    </Filters>
+  </Scheme>
+  <Scheme>
+    <Name>${170:Foo4}</Name>
+    <Filters>
+      <HSVTweak>
+        <SMin>${180:100}</SMin>
+        <VFact>${190:0.7}</VFact>
+        <HFact>${200:0.3}</HFact>
+      </HSVTweak>
+      <HSVTweak>
+        <SMax>${210:50}</SMax>
+        <HFact>${220:0}</HFact>
+        <HConst>${230:50}</HConst>
+        <SConst>${240:120}</SConst>
+        <VConst>${250:-10}</VConst>
+      </HSVTweak>
+    </Filters>
+  </Scheme>
+</Schemes>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>schemes</tabTrigger>
+  <description>Mixxx -> Schemes: Create colored versions of a skin</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.xml</scope>
+</snippet>

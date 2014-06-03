@@ -1,0 +1,27 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+<!--
+Widget name:
+  Label
+Description:
+  Display a text label.
+Tags:
+  ObjectName:
+    Optional. Allows setting of widget object name, useful for styling the widget explicitly using CSS.
+  Text:
+    The text to be displayed.
+-->
+
+<Label>
+  <ObjectName>${10:Label}</ObjectName>
+  <Text>${20:Hello}</Text>
+</Label>
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>label</tabTrigger>
+  <description>Mixxx -> Label: Display a text label</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.xml</scope>
+</snippet>

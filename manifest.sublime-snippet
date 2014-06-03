@@ -1,0 +1,33 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+  <manifest>
+    <title>${10:Name of skin}</title>
+    <author>${20:john@doe.com}</author>
+    <version>${30:1.12.0.01}</version>
+    <description>${40:A n-deck skin for demo use.}</description>
+    <language>${50:en}</language>
+    <license>${60:Creative Commons Attribution, Share-Alike 3.0 Unported}</license>
+    <attributes>
+      <attribute config_key="[Master],num_decks">${70:4}</attribute>
+      <attribute config_key="[Master],num_samplers">${80:4}</attribute>
+      <attribute config_key="[Master],num_preview_decks">${90:1}</attribute>
+      <!--Optionally, make elements visible on skin load, where 1=visible-->
+      <attribute config_key="[Spinny1],show_spinny">${100:1}</attribute>
+      <attribute config_key="[Spinny2],show_spinny">${100:1}</attribute>
+      <attribute config_key="[Spinny3],show_spinny">${100:1}</attribute>
+      <attribute config_key="[Spinny4],show_spinny">${100:1}</attribute>
+      <attribute config_key="[Samplers],show_samplers">${110:0}</attribute>
+      <attribute config_key="[Microphone],show_microphone">${120:0}</attribute>
+      <attribute config_key="[Vinylcontrol],show_vinylcontrol">${130:0}</attribute>
+      <attribute config_key="[PreviewDeck],show_previewdeck">${140:0}</attribute>
+      <attribute config_key="[Library],show_library">${150:1}</attribute>
+    </attributes>
+  </manifest>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>manifest</tabTrigger>
+  <description>Mixxx -> manifest</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.xml</scope>
+</snippet>

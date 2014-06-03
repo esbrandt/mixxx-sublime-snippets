@@ -1,0 +1,69 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+<!--
+Widget name:
+  Splitter
+Description:
+  Allows to control the size of child widgets by dragging the boundary between the children.
+Tags:
+  ObjectName:
+    Optional. Allows setting of widget object name, useful for styling the widget explicitly using CSS.
+  Orientation:
+    Holds the orientation of the splitter. Default is horizontal (i.e. the widgets are laid out side
+    by side). The possible orientations are ``horizontal`` or ``vertical``.
+  SizePolicy:
+    Tell Mixxx how widgets should grow or shrink based on the available space. The <SizeHint>
+    property is formatted as the skin abbreviation for the horizontal size and the skin abbreviation
+    for the vertical size policy separated by a comma.
+    http://mixxx.org/wiki/doku.php/creating_skins#properties_common_to_all_widgets
+  SplitSizesConfigKey:
+    Optional. Mixxx remembers remember the position of moveable GUI elements, SplitSizesConfigKey saves
+    the splits in ConfigKey provided by the skin to the mixxx.cfg file.
+    <SplitSizesConfigKey>[Insert the actual name from <title> tag in skin.xml here],LibrarySidebarSplitSize</SplitSizesConfigKey>
+    e.g. <SplitSizesConfigKey>[Deere1280x1024-SXGA],LibrarySidebarSplitSize</SplitSizesConfigKey>.
+  SplitSizes:
+    Gives the proportional splits between the children of the 'Splitter'.
+    E.g. with <SplitSizes>2,8</SplitSizes> the first 1 WidgetGroup will have 20% of the splitter size
+    initially and the 2nd WidgetGroup will have 80%. There must be as many split sizes as there are
+    children or else it will be ignored.
+-->
+
+<Splitter>
+  <ObjectName>${10:LibrarySplitter}</ObjectName>
+  <Orientation>${20:horizontal}</Orientation>
+  <SizePolicy>${30:me,me}</SizePolicy>
+  <SplitSizesConfigKey>[${40:Insert-name-of-skin-here}],LibrarySidebarSplitSize</SplitSizesConfigKey>
+  <SplitSizes>${50:2,8}</SplitSizes>
+  <Children>
+    <!-- as many regular widgets as you like in here, e.g.-->
+${60:
+    <WidgetGroup>
+      <Layout>vertical</Layout>
+      <Children>
+        <!--Search Input Field-->
+        <SearchBox></SearchBox>
+        <!--Library Tree View-->
+        <LibrarySidebar></LibrarySidebar>
+      </Children>
+    </WidgetGroup>
+    <WidgetGroup>
+      <Children>
+        <!-- Library Table-->
+        <Library></Library>
+      </Children>
+    </WidgetGroup>
+}
+    <WidgetGroup>
+    </WidgetGroup>
+  </Children>
+</Splitter>
+
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>splitter</tabTrigger>
+  <description>Mixxx -> Splitter: Control the size of widgets by dragging</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.xml</scope>
+</snippet>

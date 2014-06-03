@@ -1,0 +1,53 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+<!--
+Widget name:
+  NumberRate
+Description:
+  Display pitch rate.
+Tags:
+  ObjectName:
+    Optional. Allows setting of widget object name, useful for styling the widget explicitly using CSS.
+  TooltipId:
+    Tooltips to display on mouse-over, available IDs are in src/skin/tooltips.cpp
+    If no existing tooltip meets your needs, you can create a custom tooltip using the <Tooltip> tag.
+  MinimimSize:
+    Tell Mixxx the smallest size a widget should be. The widget will never be resized to be smaller
+    than this size. <MinimumSize> is formatted as the minimum horizontal size and the minimum
+    vertical size separated by a comma. A value of -1 for a dimension means no minimum in that dimension.
+  Pos:
+    Optional. Tell Mixxx where to position a widget. The position is relative to the widget's parent.
+    For example, if the position is 0,50 then this means position the widget 0 pixels from the
+    horizontal location of the parent widget and 50 pixels from the vertical location of the
+    widget's parent.
+  Size:
+    Optional. Tells Mixxx what size to make a widget. The size tag has a lot of historical
+    baggage associated with it because it has been around since the first version of Mixxx and has
+    a bunch of hacks added to it. <Size> is formatted as the horizontal size and the vertical size
+    separated by a comma. You can also specify a size policy using the size tag alone. As of Mixxx
+    1.12.0 there is a dedicated <SizePolicy> tag for this.
+    http://mixxx.org/wiki/doku.php/creating_skins#properties_common_to_all_widgets
+  NumberOfDigits:
+    Optional. Number of digits after the decimal.
+-->
+
+<NumberRate>
+  <ObjectName>${10:TextRate}</ObjectName>
+  <TooltipId>${20:rate_display}</TooltipId>
+  <MinimumSize>${30:60,20}</MinimumSize>
+  <!-- Pos>X,Y</Pos> -->
+  <!-- <Size>W,H</Size> -->
+  <!-- <NumberOfDigits>2</NumberOfDigits> -->
+  <Connection>
+    <ConfigKey>[Channel${40:1},rate</ConfigKey>
+  </Connection>
+</NumberRate>
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>numberrate</tabTrigger>
+  <description>Mixxx -> NumberRate: Display pitch (speed) rate</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.xml</scope>
+</snippet>

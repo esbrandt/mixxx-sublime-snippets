@@ -1,0 +1,48 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+<!--
+Widget name:
+  TrackProperty
+Description:
+  Display track informations loaded from ID3 the tracks tags.
+Tags:
+  ObjectName:
+    Optional. Allows setting of widget object name, useful for styling the widget explicitly using CSS.
+  TooltipId:
+    Tooltips to display on mouse-over, available IDs are in src/skin/tooltips.cpp
+    If no existing tooltip meets your needs, you can create a custom tooltip using the <Tooltip> tag.
+    Available tooltips for <TrackProperty> at this time are: track_artist, track_title, track_album,
+    track_time, track_key
+  Property:
+    Can be any of: artist, title, album, genre, year, track_number, times_played, comment, bpm,
+    bpmFormatted, duration, durationFormatted, key
+    ``bpm`` will be the full precision number (i.e. 1.333333333) while ``bpmFormatted`` is to
+    3 decimal places (1.333), ``duration`` is the duration in seconds, while durationFormatted is
+    the duration in hh:mm:ss.xx format.
+  MinimimSize:
+    Tell Mixxx the smallest size a widget should be. The widget will never be resized to be smaller
+    than this size. <MinimumSize> is formatted as the minimum horizontal size and the minimum
+    vertical size separated by a comma. A value of -1 for a dimension means no minimum in that dimension.
+  MaximumSize:
+    Tell Mixxx the largest size a widget should be. The widget will never be resized to be larger
+    than this size. <MaximumSize> is formatted as the maximum horizontal size and the maximum
+    vertical size separated by a comma. A value of -1 for a dimension means no maximum in that dimension.
+-->
+
+<TrackProperty>
+  <ObjectName>${10:track_artist}</ObjectName>
+  <TooltipId>${10:track_artist}</TooltipId>
+  <Property>${30:artist}</Property>
+  <Channel>${40:1}</Channel>
+  <MinimumSize>${50:-1,100}</MinimumSize>
+  <MaximumSize>${60:-1,-1}</MaximumSize>
+</TrackProperty>
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>trackproperty</tabTrigger>
+  <description>Mixxx -> TrackProperty: Display track informations loaded from ID3 the tracks tags</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.xml</scope>
+</snippet>

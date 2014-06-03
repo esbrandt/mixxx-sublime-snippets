@@ -1,0 +1,56 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+<!--
+Widget name:
+  SliderComposed
+Description:
+  Display Crossfader.
+Tags:
+  ObjectName:
+    Optional. Allows setting of widget object name, useful for styling the widget explicitly using CSS.
+  TooltipId:
+    Tooltips to display on mouse-over, available IDs are in src/skin/tooltips.cpp
+    If no existing tooltip meets your needs, you can create a custom tooltip using the <Tooltip> tag.
+  SizePolicy:
+    Tell Mixxx how widgets should grow or shrink based on the available space. The <SizeHint>
+    property is formatted as the skin abbreviation for the horizontal size and the skin abbreviation
+    for the vertical size policy separated by a comma.
+    http://mixxx.org/wiki/doku.php/creating_skins#properties_common_to_all_widgets
+  MinimimSize:
+    Tell Mixxx the smallest size a widget should be. The widget will never be resized to be smaller
+    than this size. <MinimumSize> is formatted as the minimum horizontal size and the minimum
+    vertical size separated by a comma. A value of -1 for a dimension means no minimum in that dimension.
+  MaximumSize:
+    Tell Mixxx the largest size a widget should be. The widget will never be resized to be larger
+    than this size. <MaximumSize> is formatted as the maximum horizontal size and the maximum
+    vertical size separated by a comma. A value of -1 for a dimension means no maximum in that dimension.
+  Handel:
+    Slider image (knob) which can be dragged with mouse. Supports *.png, *.jpg, *.svg
+  Slider:
+    Slider background image the <Handle> moves up and down on. Supports *.png, *.jpg, *.svg
+  Horizontal:
+    Slider orientation (``true`` or ``false``)
+-->
+
+<SliderComposed>
+  <ObjectName>${10:Crossfader}</ObjectName>
+  <TooltipId>crossfader</TooltipId>
+  <SizePolicy>${30:me,min}</SizePolicy>
+  <MinimumSize>${40:-1,40}</MinimumSize>
+  <MaximumSize>${50:-1,40}</MaximumSize>
+  <Handle>${60:handle.png}</Handle>
+  <Slider>${70:slider.png}</Slider>
+  <Horizontal>true</Horizontal>
+  <Connection>
+    <ConfigKey>[Master],crossfader</ConfigKey>
+  </Connection>
+</SliderComposed>
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>crossfader</tabTrigger>
+  <description>Mixxx -> SliderComposed: Display crossfader</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.xml</scope>
+</snippet>

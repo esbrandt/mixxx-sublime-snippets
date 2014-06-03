@@ -1,0 +1,46 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+<!--
+Widget name:
+  Time
+Description:
+  Display the current time.
+Tags:
+  ObjectName:
+    Optional. Allows setting of widget object name, useful for styling the widget explicitly using CSS.
+  TooltipId:
+    Tooltips to display on mouse-over, available IDs are in src/skin/tooltips.cpp
+    If no existing tooltip meets your needs, you can create a custom tooltip using the <Tooltip> tag.
+  Size:
+    Optional. Tells Mixxx what size to make a widget. The size tag has a lot of historical
+    baggage associated with it because it has been around since the first version of Mixxx and has
+    a bunch of hacks added to it. <Size> is formatted as the horizontal size and the vertical size
+    separated by a comma. You can also specify a size policy using the size tag alone. As of Mixxx
+    1.12.0 there is a dedicated <SizePolicy> tag for this.
+    http://mixxx.org/wiki/doku.php/creating_skins#properties_common_to_all_widgets
+  ClockFormat:
+    Determines whether the time is shown in ``24``, ``12``, ``12ap`` or ``12AP`` hour format.
+    Default is ``12AP`` , e.g. 1:45 AM.
+  ShowSeconds:
+    Determines, whether seconds are shown or not. Default is false.
+  CustomFormat:
+    You can set a custom format with <CustomFormat> instead of <ClockFormat>, which accepts the same
+    expressions as QTime::toString (http://qt-project.org/doc/qt-4.8/qtime.html#toString)
+-->
+
+<Time>
+    <ObjectName>${10:Time}</ObjectName>
+    <Size>${20:60f,20f}</Size>
+    <TooltipId>time</TooltipId>
+    <ShowSeconds>${30:false}</ShowSeconds>
+    <ClockFormat>${40:24}</ClockFormat>
+</Time>
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>time</tabTrigger>
+  <description>Mixxx -> Time: Display the current time</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.xml</scope>
+</snippet>
