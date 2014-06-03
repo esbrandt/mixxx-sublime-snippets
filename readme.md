@@ -46,7 +46,7 @@ Usage
 
 ### Command palette
 
-https://raw.githubusercontent.com/esbrandt/mixxx-sublime-snippets/master/usage-command-palette.gif
+![Command palette](https://raw.githubusercontent.com/esbrandt/mixxx-sublime-snippets/master/usage-command-palette.gif)
 
 To insert a snippet in a source file, open the Sublime Text command palette.
 
@@ -61,7 +61,7 @@ turn so that you can easily tab between them and modify them if necessary.
 
 ### Tab trigger
 
-https://raw.githubusercontent.com/esbrandt/mixxx-sublime-snippets/master/usage-tab-trigger.gif
+![Tab trigger](https://raw.githubusercontent.com/esbrandt/mixxx-sublime-snippets/master/usage-tab-trigger.gif)
 
 Alternatively, just type the trigger, e.g. `time`, in the xml source file and hit `Tab`.
 - Use `TAB` to run a snippet after typing the trigger.
