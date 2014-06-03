@@ -8,23 +8,23 @@ your Mixxx xml source files easier.
 Install
 -------
 
-##### Git
+### Git
 
 You can clone [this repository](https://github.com/esbrandt/mixxx-sublime-snippets.git)
 into your Sublime Text *Packages* user directory. You really should use
 Package Control, though.
 
-### Mac OS X
+#### Mac OS X
 
     git clone git://github.com/esbrandt/mixxx-sublime-snippets.git ~/Library/Application Support/Sublime Text 3/Packages/User/MixxxSnippets
 
 
-### Linux
+#### Linux
 
     git clone git://github.com/esbrandt/mixxx-sublime-snippets.git ~/.config/sublime-text-3/Packages/User/MixxxSnippets
 
 
-### Windows
+#### Windows
 
     git clone git://github.com/esbrandt/mixxx-sublime-snippets.git %userprofile%\AppData\Roaming\Sublime Text 3\Packages\User\MixxxSnippets
 
@@ -49,7 +49,7 @@ To insert a snippet in a source file, open the Sublime Text command palette.
 	⌘ + ⇧ + P (Max OSX)
 	Ctrl + ⇧ + P (Windows/Linux)
 
-To insert, for example, the Mixxx <Time> widget in a source file, open the
+To insert, for example, the Mixxx `<Time>` widget in a source file, open the
 command palette, type *Mixxx* and choose *Mixxx -> Time* (or choose *Mixxx ->
 Time* from the snippets menu). The code will be inserted at the cursor. The
 widgets editable tags details (size, time format, etc.) will be highlighted in
