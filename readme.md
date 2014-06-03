@@ -46,8 +46,8 @@ Usage
 
 To insert a snippet in a source file, open the Sublime Text command palette.
 
-	⌘ + ⇧ + P (Max OSX)
-	Ctrl + ⇧ + P (Windows/Linux)
+  ⌘ + ⇧ + P (Max OSX)
+  Ctrl + ⇧ + P (Windows/Linux)
 
 To insert, for example, the Mixxx `<Time>` widget in a source file, open the
 command palette, type *Mixxx* and choose *Mixxx -> Time* (or choose *Mixxx ->
@@ -59,3 +59,23 @@ Alternatively, just type the trigger, e.g. `time`, in the xml source file and hi
 - Use `TAB` to run a snippet after typing the trigger.
 - Use `TAB` and `Shift+TAB` to cycle forward/backward through editable tags.
 - Use `ESC` to exit snippet mode.
+
+
+Contents - What's included
+--------------------------
+
+- [Slider](#slider)
+- [TextProperty](#textproperty)
+- [Text](#text)
+
+| Widget name | Description | Tab trigger|
+| --- | --- | --- |
+| ### Slider |
+|   |   |
+| ### TextProperty |
+| Key | Display effective musical key | key |
+| ### Text |
+| NumberBpm | Display current BPM number after speed change | numberbpm |
+| NumberBpm | Display numeric volume and gain | numberdb |
+| Key | Display effective musical key | key |
+| Label | Display a text label | label |
