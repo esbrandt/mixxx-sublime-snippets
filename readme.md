@@ -14,7 +14,9 @@ into your Sublime Text *Packages* user directory. You really should use
 Package Control, though.
 
 ##### Package Control
+
 **Sorry. Not available in Package Control yet.**
+
 The easiest and best way to manage Sublime Text packages is with
 [Package Control][].
 
@@ -43,22 +45,25 @@ Install
 
 ### Sublime Text - Package Control
 
+**Sorry. Not available in Package Control yet.**
+
 Install via package control: http://wbond.net/sublime_packages/community
 Search for **Mixxx Snippets** or typically the keywords **Mixxx** is suitable.
 
 ### Usage
 
 To insert a snippet in a source file, open the Sublime Text command palette.
+
 	* `⌘ + ⇧ + P` (Max OSX)
 	* `Ctrl + ⇧ + P` (Windows/Linux)
 
 To insert, for example, the Mixxx <Time> widget in a source file, open the
-command palette, type *Mixxx* and choose *Mixxx ->: Time* (or choose *Mixxx ->:
+command palette, type *Mixxx* and choose *Mixxx -> Time* (or choose *Mixxx ->
 Time* from the snippets menu). The code will be inserted at the cursor. The
 widgets editable tags details (size, time format, etc.) will be highlighted in
 turn so that you can easily tab between them and modify them if necessary.
 
-ALternatively, just type the trigger in the source file and hit `Tab`.
+Alternatively, just type the trigger in the source file and hit `Tab`.
 - Use `TAB` to run a snippet after typing the trigger, e.g. `time,tab`.
 - Use `TAB` and `Shift+TAB` to cycle forward/backward through fields.
 - Use `ESC` to exit snippet mode.
