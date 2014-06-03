@@ -46,8 +46,8 @@ Usage
 
 To insert a snippet in a source file, open the Sublime Text command palette.
 
-  ⌘ + ⇧ + P (Max OSX)
-  Ctrl + ⇧ + P (Windows/Linux)
+    ⌘ + ⇧ + P (Max OSX)
+    Ctrl + ⇧ + P (Windows/Linux)
 
 To insert, for example, the Mixxx `<Time>` widget in a source file, open the
 command palette, type *Mixxx* and choose *Mixxx -> Time* (or choose *Mixxx ->
@@ -64,18 +64,25 @@ Alternatively, just type the trigger, e.g. `time`, in the xml source file and hi
 Contents - What's included
 --------------------------
 
-- [Slider](#slider)
-- [TextProperty](#textproperty)
-- [Text](#text)
-
 | Widget name | Description | Tab trigger|
 | --- | --- | --- |
-| ### Slider |
-|   |   |
-| ### TextProperty |
-| Key | Display effective musical key | key |
-| ### Text |
+| *Buttons* |
+|   |
+| *Knobs* |
+|   |
+| *Slider* |
+| SliderComposed | Display Crossfader  | crossfader |
+| SliderComposed | Display Pitch (Speed) fader  | rate |
+| SliderComposed | Display channel volume fader  | volume |
+| *Text* |
+| TextProperty | Display track informations loaded from ID3 the tracks tags | trackproperty |
 | NumberBpm | Display current BPM number after speed change | numberbpm |
 | NumberBpm | Display numeric volume and gain | numberdb |
+| NumberPos | Display playing position / time remaining | numberpos |
+| NumberRate | Display pitch (speed) rate | numberrate |
 | Key | Display effective musical key | key |
 | Label | Display a text label | label |
+| Time | Display the current time | time |
+| *Layout* |
+| Splitter | Control the size of child widgets by dragging the boundary between them | splitter |
+| Schemes | Create colored versions of a skin | schemes |
