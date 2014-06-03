@@ -44,6 +44,10 @@ The easiest and best way to manage Sublime Text packages is with
 Usage
 -----
 
+### Command palette
+
+https://raw.githubusercontent.com/esbrandt/mixxx-sublime-snippets/master/usage-command-palette.gif
+
 To insert a snippet in a source file, open the Sublime Text command palette.
 
     ⌘ + ⇧ + P (Max OSX)
@@ -54,6 +58,10 @@ command palette, type *Mixxx* and choose *Mixxx -> Time* (or choose *Mixxx ->
 Time* from the snippets menu). The code will be inserted at the cursor. The
 widgets editable tags details (size, time format, etc.) will be highlighted in
 turn so that you can easily tab between them and modify them if necessary.
+
+### Tab trigger
+
+https://raw.githubusercontent.com/esbrandt/mixxx-sublime-snippets/master/usage-tab-trigger.gif
 
 Alternatively, just type the trigger, e.g. `time`, in the xml source file and hit `Tab`.
 - Use `TAB` to run a snippet after typing the trigger.
