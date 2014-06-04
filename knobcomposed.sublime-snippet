@@ -1,0 +1,51 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+<!--
+Widget name:
+  KnobComposed
+Description:
+  Renders a rotating knob from one single image.
+  Provide an alternative to pixmap-based rotary knobs, see the <Knob> widget.
+Tags:
+  ObjectName:
+    Optional. Allows setting of widget object name, useful for styling the widget explicitly using CSS.
+  TooltipId:
+    Tooltips to display on mouse-over, available IDs are in src/skin/tooltips.cpp
+    If no existing tooltip meets your needs, you can create a custom tooltip using the <Tooltip> tag.
+  Knob:
+    Single image which can be rotated with mouse. Supports *.png, *.jpg, *.svg.
+  BackPath
+    Optional. Loads a background image from the skin folder. Support resizing and color schemes.
+  MinAngle:
+    The angle, in degrees, if the knob were turned counter-clockwise as far as possible.
+  MaxAngle:
+    The angle, in degrees, if the knob were turned clockwise as far as possible.
+  ConfigKey:
+    See http://mixxx.org/wiki/doku.php/mixxxcontrols
+    A combination of ``Group,Control``, e.g
+      * Center Balance = <ConfigKey>Master,balance</ConfigKey>
+      * Microphone pregain = <ConfigKey>Microphone,pregain</ConfigKey>
+      * Channel 1 low EQ filter knob = <ConfigKey>Channel1,filterLow</ConfigKey>
+-->
+
+<KnobComposed>
+  <ObjectName>${10:Pregain}</ObjectName>
+  <TooltipId>${20:pregain}</TooltipId>
+  <Size>$(30:40f,40f)</Size>
+  <Knob>$(40:knob.svg}</Knob>
+  <BackPath>${50:background.png}</BackPath>
+  <MinAngle>${60:-230}</MinAngle>
+  <MaxAngle>${70:50}</MaxAngle>
+  <Connection>
+    <ConfigKey>${80:Channel1},${90:pregain}</ConfigKey>
+  </Connection>
+</KnobComposed>
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>knobcomposed</tabTrigger>
+  <description>Mixxx -> KnobComposed: Renders a rotating knob from one single image.</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.xml</scope>
+</snippet>
