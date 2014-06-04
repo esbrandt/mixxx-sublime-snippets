@@ -42,6 +42,12 @@ The easiest and best way to manage Sublime Text packages is with
 Usage
 -----
 
+The snippets will **not** be triggered and automatically added in other types
+then xml documents.
+
+So, first apply xml syntax highlighting to your file. In Sublime Text use menu
+`View → Syntax → XML`.
+
 ### Command palette
 
 ![Command palette](https://raw.githubusercontent.com/esbrandt/mixxx-sublime-snippets/master/usage-command-palette.gif)
