@@ -18,11 +18,9 @@ Package Control, though.
 
     git clone git://github.com/esbrandt/mixxx-sublime-snippets.git ~/Library/Application Support/Sublime Text 3/Packages/User/MixxxSnippets
 
-
 #### Linux
 
     git clone git://github.com/esbrandt/mixxx-sublime-snippets.git ~/.config/sublime-text-3/Packages/User/MixxxSnippets
-
 
 #### Windows
 
@@ -68,6 +66,23 @@ Alternatively, just type the trigger, e.g. `time`, in the xml source file and hi
 - Use `TAB` and `Shift+TAB` to cycle forward/backward through editable tags.
 - Use `ESC` to exit snippet mode.
 
+### Auto completion
+
+In the editor, Sublime Text will show the options as you type (parts of) the trigger keyword. You can insert the snippet by selecting it from the options or completing the trigger keyword and hitting the `Tab` key.
+
+Making sure auto-completion is turned on for xml files.
+
+If auto-completion is not turned on for you, open your personal settings like this:
+
+    Sublime Text 2 > Preferences > Settings - User (Max OSX)
+    Preferences > Settings - User (Windows)
+    Preferences > Settings - User (Linux)
+
+If you want the autocomplete dropdown to appear in xml files as you type then add this line to your *User Preferences.sublime-settings* file:
+
+    {
+        "auto_complete_selector": "text.xml"
+    }
 
 Contents - What's included
 --------------------------
